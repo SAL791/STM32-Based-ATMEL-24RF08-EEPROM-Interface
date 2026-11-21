@@ -12,7 +12,7 @@ This STM32 port is preferable if you already have access to an STM32-NUCLEO micr
 - Read the Password in Plaintext (recommended)
 - Read the Password in Plaintext (alternate Scancode)
 - Dump the EEPROM in HEX format (for import in IBMpass)
-- Dump the EEPROM in Text format (for debug)\
+- Dump the EEPROM in Text format (for debug)
 - Clear the password
 
 ### Requirements:
@@ -33,7 +33,7 @@ NOTE: It is recommended to use version 1.19.0 of STM32CubeIDE or earlier, as STM
 - Ensure continuity between connection points and that there are no shorts
 - Reset the microcontroller once more and power on the laptop. After a few seconds, choose an option from the list to proceed with the recovery.
 
-<img width="2753" height="3887" alt="20261121_133649" src="https://github.com/user-attachments/assets/36106e43-84c8-4926-8295-928d89fcc777" />
+<img width="2053" height="3187" alt="20261121_133649" src="https://github.com/user-attachments/assets/36106e43-84c8-4926-8295-928d89fcc777" />
 
 Notice: This project is to be used at the user's own risk. I will not be held responsible for any damage caused to your device(s).
 
