@@ -24,7 +24,7 @@ NOTE: It is recommended to use version 1.19.0 of STM32CubeIDE or earlier, as STM
 
 ### Setup:
 - Ensure that you have full access to the 24RF08 EEPROM on your target device
-- Import the STM32 project and upload the firmware to your MCU
+- Import the STM32 project and upload the firmware to your MCU (and modify if necessary)
 - Start up and configure the terminal emulator. Reset the microcontroller and ensure that an output is displayed
 - Connect the SCL, SDA and GND pins of the 24RF08 EEPROM directly to the corresponding header pins on the microcontroller (Note: PB9 and PB8 is mapped to SDA and SCL, respectively). The EEPROM datasheet and NUCLEO pin reference may be useful at this stage:
     - https://www.alldatasheet.com/datasheet-pdf/download/152541/ATMEL/AT24RF08CN-10SC.html
