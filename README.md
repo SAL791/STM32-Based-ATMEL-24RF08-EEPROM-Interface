@@ -5,7 +5,7 @@ The program is primarily intended to recover the supervisor password of any Thin
 
 This STM32 port is preferable if you already have access to an STM32-NUCLEO microcontroller or if you do not want to include any external circuitry (i.e. I2C pull-up resistors and/or level shifting circuitry).
 
-### Important: The code, and instructions that follow is specifically for the STM32-NUCLEO F411RE (and should work with most MCUs in the NUCLEO line-up). For other series of MCUs, the .IOC file may need to be modified to correct pin mapping discrepancies, and may require further configuration for the UART functionality (Ex. for the discovery series, the USB-OTG-FS needs to be configured to enable UART communication via the micro-USB type B port).
+### Important: The code, and instructions that follow is specifically for the STM32-NUCLEO F411RE (and should be compatible with most other MCUs in the NUCLEO line-up). For other series of MCUs, the .IOC file may need to be modified to correct pin mapping discrepancies, and may require further configuration for the UART functionality (Ex. for the discovery series, the USB-OTG-FS needs to be configured to enable UART communication via the micro-USB type B port).
 
 Usage options:
 - Read the Password in Plaintext (recommended)
