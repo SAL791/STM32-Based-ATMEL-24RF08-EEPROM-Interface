@@ -5,16 +5,16 @@ The program is primarily intended to recover the supervisor password of any Thin
 
 This STM32 port is preferable if you already have access to an STM32-NUCLEO microcontroller or if you do not want to include any external circuitry (i.e. I2C pull-up resistors and/or level shifting circuitry).
 
-### Important: The code, and instructions that follow is specifically for the STM32-NUCLEO F411RE (and should be compatible with most other MCUs in the NUCLEO line-up). For other series of MCUs, the .IOC file may need to be modified to correct pin mapping discrepancies, and may require further configuration for the UART functionality (Ex. for the discovery series, the USB-OTG-FS needs to be configured to enable UART communication via the micro-USB type B port).
+### Important: The code, and instructions that follow is specifically for the STM32-NUCLEO F411RE, and the project can be directly flashed to it. For any other STM MCUs, the correct board will need to be selected in the MCU finder. Also, the .IOC file may need to be modified to correct pin mapping discrepancies, and may require further configuration for the UART functionality (Ex. for the discovery series, the USB-OTG-FS needs to be configured to enable UART communication via the micro-USB type B port). Nevertheless, the fundamental algorithm should work for any STM32 microcontroller.
 
-Usage options:
+### Usage options:
 - Read the Password in Plaintext (recommended)
 - Read the Password in Plaintext (alternate Scancode)
 - Dump the EEPROM in HEX format (for import in IBMpass)
 - Dump the EEPROM in Text format (for debug)\
 - Clear the password
 
-Requirements:
+### Requirements:
 - STM32 Microcontroller (Recommendation: STM32-NUCLEO F411RE or similar)
 - Terminal emulator (Ex. Termite, Tera Term, puTTY, etc.)
 - Jumper wires
@@ -22,7 +22,7 @@ Requirements:
 
 NOTE: It is recommended to use version 1.19.0 of STM32CubeIDE or earlier, as STM32CubeMX and ST-MCU-FINDER-PC are detached from later versions. These components are required and will have to be installed individually if you decide to utilize a later version.
 
-Setup:
+### Setup:
 - Ensure that you have full access to the 24RF08 EEPROM on your target device
 - Import the STM32 project and upload the firmware to your MCU
 - Start up and configure the terminal emulator. Reset the microcontroller and ensure that an output is displayed
