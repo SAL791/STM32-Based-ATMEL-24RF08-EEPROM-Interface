@@ -1,0 +1,14 @@
+../Core/Src/main.c:146:5:main	16	static
+../Core/Src/main.c:228:6:SystemClock_Config	88	static
+../Core/Src/main.c:270:13:MX_I2C1_Init	8	static
+../Core/Src/main.c:304:13:MX_USART2_UART_Init	8	static
+../Core/Src/main.c:337:13:MX_GPIO_Init	16	static
+../Core/Src/main.c:355:9:send_i2c_data	32	static
+../Core/Src/main.c:377:9:receive_i2c_data	32	static
+../Core/Src/main.c:397:6:UART_Print	16	static
+../Core/Src/main.c:404:6:UART_Printf	176	static
+../Core/Src/main.c:424:6:UART_ReadChar	16	static
+../Core/Src/main.c:433:13:dumpEeprom	32	static
+../Core/Src/main.c:499:13:readPassword	24	static
+../Core/Src/main.c:564:13:setPwKorn	24	static
+../Core/Src/main.c:633:6:Error_Handler	4	static,ignoring_inline_asm
