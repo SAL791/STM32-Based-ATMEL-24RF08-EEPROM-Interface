@@ -1,10 +1,10 @@
 # STM32-Based-ATMEL-24RF08-EEPROM-Interface
-This repository includes a port of the Arduino-based ThinkPad supervisor password recovery tool to the STM32 range of microcontrollers. {See: https://forum.arduino.cc/t/thinkpad-supervisor-password-read-clear }. All credit goes to the original author for providing the fundamental algorithm.
+This repository includes a port of the Arduino-based ThinkPad supervisor password recovery tool to the STM32 range of microcontrollers. {See: https://forum.arduino.cc/t/thinkpad-supervisor-password-read-clear }. All credit goes to the original author for providing the fundamental source code.
 Ensure that you are familiar with the original post before proceeding. 
 
 The program is primarily intended to recover the supervisor password of any ThinkPad laptop that uses the ATMEL 24RF08 EEPROM to store BIOS data. The MCU is commanded over a UART interface to initialize the I2C transactions. This method has been used to successfully recover a supervisor password on an IBM ThinkPad R50e.
 
-This STM32 port is preferable if you already have access to an STM32-NUCLEO microcontroller or if you do not want to include any external circuitry (i.e. I2C pull-up resistors and/or level shifting circuitry).
+This STM32 port is preferable if you already have access to an STM32-NUCLEO microcontroller or if you do not want to include any external circuitry (i.e. I2C pull-up resistors and/or level shifting circuitry). Of course, the cheapest and most accessible method to achieve the same outcomes is to use an Arduino board and the original source code.
 
 ### Important: The code, and instructions that follow is specifically for the STM32-NUCLEO F411RE, and the project can be directly flashed to it. For any other STM MCUs, the correct board will need to be selected in the MCU finder. Also, the .IOC file may need to be modified to correct pin mapping discrepancies, and may require further configuration for the UART functionality (Ex. for the discovery series, the USB-OTG-FS needs to be configured to enable UART communication via the micro-USB type B port). Nevertheless, the fundamental algorithm should work for any STM32 microcontroller.
 
